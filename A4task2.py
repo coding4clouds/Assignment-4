@@ -1,0 +1,13 @@
+# Write and Append Data to a File
+data=input('Enter text to write to the file: ')
+f=open('output.txt','a')
+f.write(data+'\n')
+print('Data successfully written to output.txt')
+data=input('Enter additional text to append: ')
+f.write(data+'\n')
+f.close()
+print('Data successfully appended\n')
+print('Final content of output.txt')
+f=open('output.txt','r')
+print(f.read())
+f.close()
